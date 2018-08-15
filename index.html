@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Training 5 : afficher Pdt dans panier</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+
+<style>
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		background-color: #3c7084;
+		font-family: Avenir;
+	}
+	
+
+		
+	h1{
+		color: dodgerblue;
+		font-size: 22px;
+	}
+
+	h2{
+		font-size: 16px;
+	}
+
+
+	#main{
+		background: url(./catafond.jpg) 0 0 no-repeat;
+
+		width: 537px;
+		height: 760px;
+		margin: auto;
+	}
+
+	.large{
+		padding-top: 20%;
+		padding-left: 5%;
+		width: 100%;
+		height: 25%;
+	}
+
+	.court{
+		padding-top: 10%;
+		padding-left: 5%;
+		width: 50%;
+		height: 25%;
+		float: left;
+	}
+
+	.circle{
+		font-size: 30px;
+		width: 60px;
+		height: 60px;
+		background-color: white;
+		border-radius: 30px;
+		text-align : center;
+		line-height: 60px;
+		opacity: 0.7;
+		cursor : default;
+
+	}
+
+	.circle:hover{
+		opacity: 1;
+		cursor: pointer;
+
+	}
+
+
+	#panier{
+		float: left;
+		width: 60px;
+		height: 35px;
+		background-color: #00485e;
+		color: white;
+		text-align: center; 
+		line-height: 35px;
+		padding-top: 8px;
+		position: fixed;
+		font-family: 'Do Hyeon', sans-serif;
+		z-index: 2;
+
+	}
+
+
+	#listePanier{
+		background-color: black;
+		float:left;
+		width: 90px;
+		height: 35px;
+		overflow: hidden;
+		margin-left : 60px;
+		font-family: 'Do Hyeon', sans-serif;
+		font-size: 16px;
+		color: white;	
+		text-align: center;	
+		position: fixed;
+		padding-top: 14px;
+		z-index: 2;
+
+
+
+	}
+
+
+	#listePanier:hover{
+		float: left;
+		width: 400px;
+		height: auto;
+		transition: 0.5s;
+		background-color: #fff;
+		color: white;
+		font-family: 'Do Hyeon', sans-serif;
+		color: black;
+
+		text-align: left;
+
+
+
+	}
+
+
+
+
+</style>
+
+</head>
+<body>
+		
+
+
+	<main id="main">
+		
+
+		<div id="panier">haha</div>
+		<div id="listePanier">
+			<p id="count">0 EUR</p>
+			<p>Ajout au panier:</p></div>
+		<div class="large"><div id="un" class="circle">+</div></div>
+		<div class="large"><div id="deux" class="circle">+</div></div>
+		<div class="large"><div id="trois" class="circle">+</div></div>
+		<div class="court"><div  id="quatre" class="circle">+</div></div>
+		<div id="cinq" class="court"><div id="cinq" class="circle">+</div></div>
+	</main>
+
+
+
+	<div id="panierdiv"></div>
+
+
+	<h1>Cart</h1>
+	<h2>Mouse over the total price to see the list</h2>
+
+   
+
+		<ul id = "liste"></ul> 
+	<script src="./app.js"></script>	
+</body>
+</html>
